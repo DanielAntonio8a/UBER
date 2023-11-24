@@ -1,0 +1,53 @@
+
+  <body style="background-color: rgb(252, 252, 252); ">
+    <ion-header style="background-color: rgb(235, 228, 228); ">
+      <img class= "scale-up-top" src="../../assets/Uber.png">
+    
+    </ion-header>
+    <form>
+      <label for="search">Search</label>
+      <input id="search" type="search" pattern=".*\S.*" required>
+      <span class="caret"></span>
+    </form>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Ultimos</ion-card-title>
+        <ion-card-subtitle>MOVIMIENTOS</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label style="color: black;">Mall del Rio - Cuenca</ion-label>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label style="color: black;">UETS - CUENCA</ion-label>
+          </ion-item>
+    
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label style="color: black;">Dolphing Mall - Miami</ion-label>
+          </ion-item>
+    
+          <ion-item lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-label style="color: black;">MIA International - Miami</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+      <ion-card-content class="ion-text-center">
+        <ion-button size="large" color="dark" [routerLink]="['/','error']">Search</ion-button>
+        <ion-button size="large"   color="dark" [routerLink]="['/','inicio']">Back</ion-button>
+      </ion-card-content>
+    </body>
